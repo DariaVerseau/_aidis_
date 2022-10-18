@@ -1,0 +1,12 @@
+.container {
+    margin: 0px 150px;
+}
+.logo {
+    padding-top: 0px 21px;
+}
+.header__navigation {
+    padding-top: 0px 17px;
+}
+.header-line {
+    display: flex;
+}
