@@ -1,1 +1,51 @@
+.header {
+    padding: 0;
+    margin: 0;
+}
 
+.header__logo {
+    position: absolute;
+}
+
+.logo1 {
+    width: 25.95px;
+    height: 25.95px;
+    top: 26.95px;
+    left: 150px;
+
+
+}
+
+.aidis {
+    width: 125.41px ;
+    height: 40px ;
+    top: 21px ;
+    left: 184.59px ;
+    
+}
+
+.logo__link {}
+
+.header__navigation {
+    display: flex;
+}
+
+.service {}
+
+.brending {}
+
+.it-items {}
+
+.promotion {}
+
+.header-img {}
+
+.top-text {}
+
+.header_buttons {}
+
+.left {}
+
+.middle {}
+
+.right {}
