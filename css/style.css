@@ -1,0 +1,67 @@
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-family: 'GrandisExtended-Black';
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+.container {
+  max-width: 1728px;
+  margin: 0px auto;
+  padding: 0px 150px;
+  box-sizing: content-box;
+
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+
+.header__container {
+  position: relative;
+  display: flex;
+  min-height: 82px;
+  align-items: center;
+}
+
+.header__logo {
+  background-color: ;
+}
+
+.header__row {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__item {}
+
+.menu__link {
+  color: #34424D;
+  font-weight: 400;
+  line-height: 128%;
+}
+
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
