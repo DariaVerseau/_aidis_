@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'GrandisExtended-Black';
+  src: url('../assets/fonts/GrandisExtended-Black.woff2') format('woff2'),
+    url('../assets/fonts/GrandisExtended-Black.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GrandisExtended-Black';
+  src: url('../assets/fonts/GrandisExtended-Black.woff2') format('woff2'),
+    url('../assets/fonts/GrandisExtended-Black.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --text-color: ;
+  --text-color-hover ;
+  --primary-color ;
+  --ui-color ;
+  --bg-color ;
+  --section-color ;
+}
+
+
 html {
   font-size: 1rem;
 }
@@ -14,20 +42,28 @@ figure {
   margin: 0;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .container {
-  max-width: 1728px;
+  max-width: 1448px;
   margin: 0px auto;
-  padding: 0px 150px;
-  box-sizing: content-box;
+  padding: 0px 150px 0px 150px;
+  box-sizing: border-box;
+  width: 100%;
 
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   left: 0;
   top: 0;
   z-index: 50;
+
 }
 
 .header__container {
@@ -35,24 +71,22 @@ figure {
   display: flex;
   min-height: 82px;
   align-items: center;
-}
-
-.header__logo {
-  background-color: ;
-}
-
-.header__row {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  background-color: white;
 }
 
 .menu {
   display: flex;
   justify-content: space-between;
+  margin: 17px 92px 17px 81px;
 }
 
-.menu__item {}
+.menu__item {
+  border: 1px solid #EBEFF0;
+  border-radius: 100px;
+  padding: 12px 24px;
+  height: 48px;
+
+}
 
 .menu__link {
   color: #34424D;
@@ -65,3 +99,42 @@ figure {
   min-height: 100%;
   overflow: hidden;
 }
+
+.service-menu {
+  display: none;
+}
+
+.item-btn {
+  border: 1px solid #EBEFF0;
+  border-radius: 100px;
+
+}
+
+.ag-menu {
+  display: none;
+}
+
+.menu__items {
+  display: flex;
+
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__item:not(:first-child) {
+  margin-left: 8px;
+
+}
+
+
+.number {
+  font-family: 'Grandis Extended';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 0;
+  margin-right: 40px;
+}
+
+.application {}
