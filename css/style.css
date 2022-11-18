@@ -17,12 +17,12 @@
 }
 
 :root {
-  --text-color: ;
-  --text-color-hover ;
-  --primary-color ;
-  --ui-color ;
-  --bg-color ;
-  --section-color ;
+  --text-color: #23282B;
+  --text-color-hover;
+  --primary-color;
+  --request-color: #FFFF50;
+  --bg-color;
+  --section-color;
 }
 
 
@@ -32,6 +32,7 @@ html {
 
 body {
   font-family: 'GrandisExtended-Black';
+  height: 100%;
 }
 
 a {
@@ -46,6 +47,10 @@ figure {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+.logo {
+  flex-shrink: 0;
 }
 
 .container {
@@ -66,12 +71,45 @@ figure {
 
 }
 
+.main {
+  flex: 1 1 auto;
+}
+
+.footer {
+  text-align: center;
+
+}
+
 .header__container {
   position: relative;
   display: flex;
-  min-height: 82px;
+  max-height: 82px;
   align-items: center;
   background-color: white;
+}
+
+.h1 {
+  margin: 0;
+  font-family: GrandisExtended-Black;
+  font-size: 1.875rem;
+  line-height: 120%;
+  color: var(--text-color);
+}
+
+.h2 {
+  margin: 0;
+  font-family: GrandisExtended-Black;
+  font-size: 1.875rem;
+  line-height: 120%;
+  color: var(--text-color);
+}
+
+.h3 {
+  margin: 0;
+  font-family: GrandisExtended-Black;
+  font-size: 1.875rem;
+  line-height: 120%;
+  color: var(--text-color);
 }
 
 .menu {
@@ -85,11 +123,12 @@ figure {
   border-radius: 100px;
   padding: 12px 24px;
   height: 48px;
+  width: auto;
 
 }
 
 .menu__link {
-  color: #34424D;
+  color: var(--text-color);
   font-weight: 400;
   line-height: 128%;
 }
@@ -98,17 +137,15 @@ figure {
 .wrapper {
   min-height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .service-menu {
   display: none;
 }
 
-.item-btn {
-  border: 1px solid #EBEFF0;
-  border-radius: 100px;
-
-}
+.item-btn {}
 
 .ag-menu {
   display: none;
@@ -116,10 +153,10 @@ figure {
 
 .menu__items {
   display: flex;
-
+  padding-left: 0px;
   list-style: none;
   align-items: center;
-  justify-content: space-between;
+
 }
 
 .menu__item:not(:first-child) {
@@ -133,8 +170,16 @@ figure {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 0;
+  line-height: 1.5%;
   margin-right: 40px;
 }
 
-.application {}
+.request {
+  border: #FFFF50;
+  background: #FFFF50;
+  border-radius: 100px;
+  width: 212px;
+  height: 48px;
+  padding: 12px 24px;
+
+}
