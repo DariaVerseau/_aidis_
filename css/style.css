@@ -63,12 +63,17 @@ figure {
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   width: 100%;
   left: 0;
   top: 0;
   z-index: 50;
 
+}
+
+.header__item {
+  display: flex;
+  flex-direction: row;
 }
 
 .main {
@@ -91,7 +96,7 @@ figure {
 .h1 {
   margin: 0;
   font-family: GrandisExtended-Black;
-  font-size: 1.875rem;
+  font-size: 3.125rem;
   line-height: 120%;
   color: var(--text-color);
 }
@@ -107,14 +112,13 @@ figure {
 .h3 {
   margin: 0;
   font-family: GrandisExtended-Black;
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   line-height: 120%;
   color: var(--text-color);
 }
 
 .menu {
   display: flex;
-  justify-content: space-between;
   margin: 17px 92px 17px 81px;
 }
 
@@ -128,9 +132,13 @@ figure {
 }
 
 .menu__link {
+  font-family: 'GrandisExtended-Black';
   color: var(--text-color);
+  font-style: normal;
   font-weight: 400;
-  line-height: 128%;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
 }
 
 
@@ -145,7 +153,7 @@ figure {
   display: none;
 }
 
-.item-btn {}
+
 
 .ag-menu {
   display: none;
@@ -159,22 +167,27 @@ figure {
 
 }
 
-.menu__item:not(:first-child) {
-  margin-left: 8px;
+.menu__item:not(:last-child) {
+  margin-right: 8px;
 
 }
 
 
 .number {
-  font-family: 'Grandis Extended';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5%;
   margin-right: 40px;
 }
 
+.tel__link {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+
+}
+
 .request {
+  position: absolute;
+  display: flex;
   border: #FFFF50;
   background: #FFFF50;
   border-radius: 100px;
@@ -182,4 +195,19 @@ figure {
   height: 48px;
   padding: 12px 24px;
 
+
+}
+
+.rqst__link {
+  color: var(--text-color);
+}
+
+/------main----------------------------/
+
+.main-img {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  object-fit: cover;
+  margin-top: 82px;
 }
