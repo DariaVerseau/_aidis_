@@ -1,0 +1,297 @@
+@font-face {
+  font-family: 'GrandisExtended-Black';
+  src: url('../assets/fonts/GrandisExtended-Black.woff2') format('woff2'),
+    url('../assets/fonts/GrandisExtended-Black.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GrandisExtended-Black';
+  src: url('../assets/fonts/GrandisExtended-Black.woff2') format('woff2'),
+    url('../assets/fonts/GrandisExtended-Black.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --text-color: #23282B;
+  --text-color-hover;
+  --primary-color;
+  --request-color: #FFFF50;
+  --bg-color;
+  --section-color;
+}
+
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-family: 'GrandisExtended-Black';
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0px auto;
+  padding: 0px 150px 0px 150px;
+  box-sizing: border-box;
+  width: 100%;
+
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+
+}
+
+.header__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.footer {
+  text-align: center;
+
+}
+
+.header__container {
+  position: absolute;
+  display: flex;
+  min-height: 82px;
+  align-items: center;
+}
+
+.h1 {
+  margin: 0;
+  font-family: GrandisExtended-Black;
+  font-size: 3.125rem;
+  line-height: 120%;
+  color: var(--text-color);
+}
+
+.h2 {
+  margin: 0;
+  font-family: GrandisExtended-Black;
+  font-size: 1.875rem;
+  line-height: 120%;
+  color: var(--text-color);
+}
+
+.h3 {
+  margin: 0;
+  font-family: GrandisExtended-Black;
+  font-size: 1.25rem;
+  line-height: 120%;
+  color: var(--text-color);
+}
+
+.menu {
+  display: flex;
+
+}
+
+.menu__item {
+  display: flex;
+  border: 1px solid #EBEFF0;
+  border-radius: 100px;
+  padding: 12px 24px;
+  height: 48px;
+  width: auto;
+
+}
+
+.menu__link {
+  font-family: 'GrandisExtended-Black';
+  color: var(--text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-menu {
+  display: none;
+}
+
+
+
+.ag-menu {
+  display: none;
+}
+
+.menu__items {
+  display: flex;
+  list-style: none;
+  align-items: center;
+
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 8px;
+
+}
+
+.caret {
+  position: relative;
+  display: block;
+  width: 6.6px;
+  height: 1px;
+  margin-left: 2px;
+  margin-top: -2px;
+}
+
+.caret::before,
+.caret::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 5px;
+  height: 100%;
+  background-color: #888888;
+}
+
+.caret::before {
+  left: 0;
+  transform-origin: left center;
+  transform: rotate(45deg);
+}
+
+.caret::after {
+  right: 0;
+  transform-origin: right center;
+  transform: rotate(-45deg);
+}
+
+
+
+.number {
+  margin-left: 92px;
+}
+
+.tel__link {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+
+}
+
+.request {
+  position: relative;
+  display: flex;
+  margin-left: 40px;
+  border: #FFFF50;
+  background: #FFFF50;
+  border-radius: 100px;
+  min-width: 212px;
+  height: 48px;
+  padding: 12px 24px;
+
+
+
+}
+
+.rqst__link {
+  color: var(--text-color);
+  font-family: 'Grandis Extended';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+
+.main-img {
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  top: 82px;
+
+}
+
+.nav-window {
+  position: relative;
+}
+
+
+.top-text {
+  position: absolute;
+  height: 18px;
+  width: 100%;
+  left: 150px;
+  top: 162px;
+}
+
+.top-text p {
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+.main__text {
+  position: absolute;
+  width: 945px;
+  height: 76px;
+  left: 150px;
+  top: 340px;
+
+}
+
+.main__buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.main__buttons button {
+  position: relative;
+  top: 40px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(15px);
+  border-radius: 100px;
+}
